@@ -1,0 +1,322 @@
+@font-face {
+  font-family: "ExtraLight";
+  /*Can be any text*/
+  src: local("Silk_Serif_ExtraLight"),
+    url("./assets/fonts/Silk_Serif_ExtraLight.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Medium";
+  /*Can be any text*/
+  src: local("Silk_Serif_Medium"),
+    url("./assets/fonts/Silk_Serif_Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Light";
+  /*Can be any text*/
+  src: local("Silk_Serif_Light"),
+    url("./assets/fonts/Silk_Serif_Light.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neue";
+  /*Can be any text*/
+  src: local("NeueRegular"),
+    url("./assets/fonts/NeueRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NeueLight";
+  /*Can be any text*/
+  src: local("NeueLight"),
+    url("./assets/fonts/NeueLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NeueUltra";
+  /*Can be any text*/
+  src: local("NeueUltra"),
+    url("./assets/fonts/NeueUltra.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NeueThin";
+  /*Can be any text*/
+  src: local("NeueThin"),
+    url("./assets/fonts/NeueThin.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: crosshair;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/images/lab.png");
+  background-size: cover;
+}
+
+
+/* NAVBAR */
+
+
+.navbar {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  height: 8rem;
+  padding: 2rem;
+  color: black;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  font-family: "Neue";
+  font-size: 1rem;
+  padding: 10px 50px;
+  transition: transform 0.5s ease-in-out;
+  color: black;
+}
+
+li:hover{
+  transform: translateY(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* LANDING PAGE */
+
+.experience {
+  font-size: 3rem;
+  font-family: "ExtraLight";
+  color: black;
+
+}
+
+.creative {
+  font-size: 3rem;
+  font-family: "NeueThin";
+  color: black;
+
+}
+
+.titles {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.work p {
+  text-align: center;
+  flex-basis: 100%;
+  color: black;
+
+}
+
+.work span {
+  font-size: 1rem;
+  color: black;
+
+}
+
+.about {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: auto;
+}
+
+.text {
+  text-align: center;
+  margin: auto;
+  font-size: 1.3rem;
+  padding: 10px;
+  color: black;
+
+}
+
+.sub {
+  font-family: "Neue";
+  font-size: 1.3rem;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  color: black;
+
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.project-container {
+  height: 60vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 2px;
+}
+
+.projects-container-main{
+  width: 100%;
+overflow: hidden;
+}
+
+
+.project-card {
+  border: solid 1px black;
+  border-radius: 10px;
+  flex: 1;
+  transition: 1s;
+  position: relative;
+  display: flex;
+}
+
+.project-card:nth-child(1) {
+  background-image: url("./assets/images/roblox.png");
+  background-size: cover;
+}
+.project-card:nth-child(2) {
+  background-image: url("./assets/images/kun2.jpg");
+  background-size: cover;
+}
+.project-card:nth-child(3) {
+  background-image: url("./assets/images/space.PNG");
+  background-size: cover;
+}
+.project-card:nth-child(4) {
+  background-image: url("./assets/images/banana.PNG");
+  background-size: cover;
+}
+.project-card:nth-child(5) {
+  background-image: url("./assets/images/business.png");
+  background-size: cover;
+}
+.project-card:nth-child(6) {
+  background-image: url("./assets/images/top.png");
+  background-size: cover;
+}
+.project-card:nth-child(7) {
+  background-image: url("./assets/images/crobar.png");
+  background-size: cover;
+}
+.project-card:nth-child(8) {
+  background-image: url("./assets/images/marta.png");
+  background-size: cover;
+}
+.project-card:nth-child(9) {
+  background-image: url("./assets/images/lali.png");
+  background-size: cover;
+}
+
+
+
+.project-card:hover {
+  flex: 4;
+}
+
+.project-card p {
+  writing-mode: sideways-lr;
+  transform: rotate(-90deg);
+  transform-origin: 15%;
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  justify-items: flex-end;
+  bottom: 30px;
+  text-align: left;
+  font-size: 1.2rem;
+  background-color: white;
+  border-radius: 1px solid black;
+  padding: 10px;
+}
+
+.project-description{
+position: absolute;
+width: 300px;
+background-color: rgb(255, 255, 255);
+display: inline-block;
+padding: 15px;
+margin-left: 30%;
+font-size: 0.9rem;
+top: 10px;
+color: black;
+
+}
+
+.press-container{
+
+display: flex;
+}
+
+.image-press1{
+background-image:url("./assets/images/press1.PNG");
+background-size: cover;
+height: 300px;
+width: 300px;
+border: 1px solid black;
+}
+.image-press2{
+background-image:url("./assets/images/press2.PNG");
+background-size: cover;
+height: 300px;
+width: 300px;
+border: 1px solid black;
+}
+.image-press3{
+background-image:url("./assets/images/press3.PNG");
+background-size: cover;
+height: 300px;
+width: 300px;
+border: 1px solid black;
+}
+.image-press4{
+background-image:url("./assets/images/press4.PNG");
+background-size: cover;
+height:300px;
+width: 300px;
+border: 1px solid black;
+}
+.image-press5{
+background-image:url("./assets/images/press5.PNG");
+background-size: cover;
+height: 300px;
+width:300px;
+border: 1px solid black;
+}
+
+
